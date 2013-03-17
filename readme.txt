@@ -7,10 +7,10 @@
 |______| |_______||__| |__||_______||___|    |_______||___|  |_|  |___|  
 
 BY:             bas080
-DESCRIPTION:    Dual port with names
+DESCRIPTION:    Dual port teleportation inspired by Zeg9's version
 VERSION:        0.5
 LICENSE:        WTFPL
-FORUM:          http://forum.minetest.net/viewtopic.php?id=2344
+FORUM:          http://forum.minetest.net/viewtopic.php?pid=76281
 
 Changelog
 
