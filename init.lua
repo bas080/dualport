@@ -2,13 +2,23 @@ local teleporters = {}
 
 teleporters.file = minetest.get_worldpath()..'/teleporters'
 
-minetest.register_craft({
-	output = 'dualport:dualport',
-	recipe = {
-		{'flolands:floatsand','default:sand'},
-		{'default:cactus','default:desert_sand'},
-	}
-})
+if minetest.get_modpath("flolands") then
+  minetest.register_craft({
+    output = 'dualport:dualport',
+    recipe = {
+      {'flolands:floatsand','default:sand'},
+      {'default:cactus','default:desert_sand'},
+    }
+  })
+else
+  minetest.register_craft({
+    output = 'dualport:dualport',
+    recipe = {
+      {'default:glass','default:mese_crystal'},
+      {'default:cactus','default:desert_sand'},
+    }
+  })
+end
 
 local function is_owner(pos, placer)
   local owner = minetest.env:get_meta(pos):get_string("owner")
